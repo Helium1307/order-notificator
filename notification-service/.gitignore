@@ -2,7 +2,7 @@
 /dist
 /node_modules
 /build
-/docker-data/dms/config
+/*/docker-data/dms/config
 
 # Logs
 logs
