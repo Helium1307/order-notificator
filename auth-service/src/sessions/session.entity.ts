@@ -1,16 +1,13 @@
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
-export class User {
+export class Session {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
-  @Column({ unique: true })
-  email: string;
+  @Column()
+  userId: string;
 
   @Column()
-  name: string;
-
-  @Column()
-  passwordHash: string;
+  expiresAt: Date;
 }
